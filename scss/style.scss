@@ -1,0 +1,14 @@
+$width: 500px;
+
+div {
+   width: $width;
+   height: 100px;
+
+   @if $width > 600px {
+      background-color: red;
+   } @else if $width > 400px {
+      background-color: blue;
+   } @else {
+      background-color: green;
+   }
+}
